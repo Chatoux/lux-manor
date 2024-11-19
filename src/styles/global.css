@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind CSS Styles */
+@layer base {
+  /* Base styles for text, headings, and links */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-800;
+  }
+
+  p {
+    @apply text-gray-700;
+  }
+
+  a {
+    @apply text-primary hover:underline;
+  }
+}
+
+/* Component styles using Tailwind */
+@layer components {
+  /* Primary button style */
+  .btn-primary {
+    @apply px-4 py-2 bg-[#F472B6] text-white rounded hover:bg-[#F9A8D4] transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-[#F9A8D4] text-white rounded hover:bg-[#FED7E2] transition-colors duration-200;
+  }
+
+  /* Text colors */
+  .text-primary {
+    @apply text-[#F472B6];
+  }
+
+  .text-secondary {
+    @apply text-[#F9A8D4];
+  }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  /* Responsive design utilities */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Margin utilities */
+  .mt-1 {
+    @apply mt-1;
+  }
+
+  .mb-1 {
+    @apply mb-1;
+  }
+
+  /* Padding utilities */
+  .pt-1 {
+    @apply pt-1;
+  }
+
+  .pb-1 {
+    @apply pb-1;
+  }
+
+  /* Responsive text size utilities */
+  .text-responsive {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+}
